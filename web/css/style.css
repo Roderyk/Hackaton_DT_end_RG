@@ -244,15 +244,6 @@ table {
         left: -10px;
         border-radius: 0 4px 4px 0;
         padding: 16px; }
-  .hero:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: -webkit-gradient(linear, left top, right top, from(#7A217F), to(transparent));
-    background: linear-gradient(to right, #7A217F, transparent); }
 
 html {
   font-family: "Poppins", sans-serif; }
@@ -272,3 +263,13 @@ p {
 .responsive {
   width: 100%;
   height: auto; }
+
+.gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#7A217F), to(transparent));
+  background: linear-gradient(to right, #7A217F, transparent); }

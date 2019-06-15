@@ -33,3 +33,15 @@ p {
     width: 100%;
     height: auto;
   }
+
+.gradient {
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to right, $color4, transparent)
+    }
+}
