@@ -1,10 +1,15 @@
 // global
 @import 'reset.scss';
 @import 'variables.scss';
+@import 'mixins.scss';
+
+
 
 // addons
-
+@import 'flaticon.scss';
 // our modules
+@import 'c_video.scss';
+@import 'c_footer.scss';
 
 html {
     font-family: $poppins;
@@ -19,7 +24,38 @@ h2, .h2 {
     font-weight: $bold;
 }
 
+
+
+
+.wrapper-video{
+    max-width: $container-max-width;
+    margin: 0 auto;
+    position: relative;
+
+    padding-left: $space;
+    padding-right: $space; 
+ //   @include tablet{
+ //       padding-left: 2*$space;
+ //       padding-right: 2*$space;
+ //   }
+}
+.wrapper-footer{
+    max-width: $container-max-width;
+    margin: 0 auto;
+    position: relative;
+
+    padding-left: $space;
+    padding-right: $space; 
+ //   @include tablet{
+ //       padding-left: 2*$space;
+ //       padding-right: 2*$space;
+ //   }
+}
+
+
+
 p {
     font-size: 16px;
     font-weight: $bold;
+    color: $color5;;
 }

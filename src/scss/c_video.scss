@@ -4,7 +4,7 @@
 
     // chcemy pozycjonowac wszystko (na 100% szerokosci) wzgledem modulu, a nie wrapera 
     position: relative;
-    .wrapper{
+    .wrapper-video{
         position: static;
         // height: 100vh;
         // padding-top: $space;
@@ -23,23 +23,30 @@
     
     &-header{
         position: absolute;
-        color: $white;
-        top: $space;
+     
+        top:60%;
+      //  right: 0;
+        left: 47%;
+     //   bottom: 50%;
+        color: $color1;
         
-        @include min-media($bpoint-tab){
-            top: 2*$space;
-        }
+        
+       // @include tablet{
+     //       top: 2*$space;
+     //   }
     }
 
     &-controls{
         position: absolute;
-        bottom: $space;
-        @include min-media($bpoint-tab){
-            bottom: 2*$space;
-        }
-
+        top:50%;
+      //  right: 0;
+        left: 50%;
+     //   bottom: 50%;
+      //  color: $color1;
+        
         button{
-            color: $white;
+           
+            color: $color1;
             font-size: 2 * $base-unit;
         }
 
@@ -62,7 +69,7 @@
         bottom: 0;
         height: $base-unit;
         width: 0;
-        background-color: $color-4;
+        background-color: $color4;
     }
 
 
