@@ -45,6 +45,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  color: #FFFFFF; }
+  @media screen and (min-width: 768px) {
+    .header {
+      height: 200px; } }
+  .header__logo {
+    float: left; }
+    .header__logo-img {
+      padding: 0 50px;
+      height: 100px;
+      width: auto;
+      -webkit-filter: invert(1);
+              filter: invert(1); }
+  .header__nav {
+    padding-top: 30px;
+    border-top: solid 1px rgba(255, 255, 255, 0.7); }
+    .header__nav .nav__item {
+      text-align: center;
+      display: inline-block;
+      width: 13%; }
+      .header__nav .nav__item a {
+        text-decoration: none;
+        color: #FFFFFF; }
+    .header__nav .button {
+      background-color: transparent;
+      border: solid #FFFFFF 1px;
+      border-radius: 3px;
+      padding: 15px;
+      max-width: 150px; }
+
+.hero {
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #F2F2F2;
+  height: 450px;
+  background-image: url(../img/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 15% 30%;
+  position: relative; }
+  .hero .wrapper-hero {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .hero {
+      height: 600px; } }
+  @media screen and (min-width: 1280px) {
+    .hero {
+      height: 100vh; } }
+  .hero__content .title__span {
+    font-size: 20px; }
+
 html {
   font-family: "Poppins", sans-serif; }
 
@@ -59,3 +116,7 @@ h2, .h2 {
 p {
   font-size: 16px;
   font-weight: 500; }
+
+.responsive {
+  width: 100%;
+  height: auto; }

@@ -1,0 +1,46 @@
+.header{
+    position: absolute;
+    top: 20px; left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    color: $color1;
+
+    @include tablet{
+        height: 200px;
+    }
+
+    &__logo {
+        float: left;
+        &-img  {
+        padding: 0 50px;
+        height: 100px;
+        width: auto;
+        filter: invert(1);
+        }  
+    }
+    &__nav {
+        padding-top: 30px;
+        border-top: solid 1px rgba(255, 255, 255, 0.7);
+        .nav__item {
+            text-align: center;
+            display: inline-block;
+            width: 13%;
+            a {
+                text-decoration: none;
+                color: $color1;
+            }
+        }
+        .button {
+            background-color: transparent;
+            border: solid $color1 1px;
+            border-radius: 3px;
+            padding: 15px;
+            max-width: 150px;
+        }  
+        
+    }
+    
+    
+}

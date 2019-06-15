@@ -1,0 +1,29 @@
+.hero{
+        .wrapper-hero {
+            width: 100%;
+        }
+        margin: 0;
+        color: $color1;
+        background-color: $color2;
+        height: 450px;
+        background-image: url(../img/hero-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: 15% 30%;
+        position: relative;
+
+        @include tablet{
+            height: 600px;
+        }
+    
+        @include desktop{
+            height: 100vh;
+        }
+    &__content{
+        .title{
+           &__span{
+               font-size: 20px;
+           } 
+        }
+        
+    }
+}

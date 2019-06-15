@@ -1,10 +1,15 @@
 // global
 @import 'reset.scss';
 @import 'variables.scss';
+@import 'mixins.scss';
 
 // addons
 
 // our modules
+@import 'header.scss';
+@import 'hero.scss';
+
+
 
 html {
     font-family: $poppins;
@@ -23,3 +28,8 @@ p {
     font-size: 16px;
     font-weight: $bold;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
