@@ -1,17 +1,15 @@
 .header{
     position: absolute;
-    top: 20px; left: 0;
+    top: 0px; 
+    left: 0;
     z-index: 10;
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     color: $color1;
 
-    @include tablet{
-        height: 200px;
-    }
-
     &__logo {
+        margin-top: 10px;
         float: left;
         &-img  {
         padding: 0 50px;
@@ -20,16 +18,117 @@
         filter: invert(1);
         }  
     }
+    .menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 85%;
+        overflow: visible;
+        @include tablet{
+            left: 90%;
+        }
+        @include desktop{
+            position: initial;
+            display: inline-block;
+        }
+        
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0; /* hide this */
+            z-index: 2; /* and place it over the hamburger */
+            -webkit-touch-callout: none;
+            @include desktop {
+               display: none; 
+            }
+          }
+        span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: $color1;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        opacity 0.55s ease;
+            @include desktop {
+                display: none;
+            }
+          } 
+        span:first-child {
+            transform-origin: 0% 0%;
+            }
+        span:nth-last-child(2)
+            {
+              transform-origin: 0% 100%;
+            }
+        input:checked ~ span
+            {
+              opacity: 1;
+              transform: rotate(45deg) translate(-2px, -1px);
+              background: $color9;
+            }
+        input:checked ~ span:nth-last-child(3)
+            {
+              opacity: 0;
+              transform: rotate(0deg) scale(0.2, 0.2);
+            }
+        input:checked ~ span:nth-last-child(2)
+        {
+            transform: rotate(-45deg) translate(0, -1px);
+        }
+        input:checked ~ ul
+        {
+        transform: none;
+        }
+    }
+ 
     &__nav {
+        position: absolute;
+        width: 500px;
+        padding: 20px;
+        margin: -100px 0 0 -275px;
+        @include desktop {
+            margin: 0;
+            background: none;
+        }
+        top: 45px;
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         padding-top: 30px;
         border-top: solid 1px rgba(255, 255, 255, 0.7);
         .nav__item {
-            text-align: center;
-            display: inline-block;
-            width: 13%;
+            text-align: left;
+            padding-top: 20px;
+            @include desktop {
+                display: inline-block;
+                width: 13%;
+                text-align: center;
+            }
+            
             a {
                 text-decoration: none;
                 color: $color1;
+                transition: color 0.3s ease;
+            }
+            a:hover {
+                color:tomato
             }
         }
         .button {
@@ -38,9 +137,9 @@
             border-radius: 3px;
             padding: 15px;
             max-width: 150px;
+            margin: 20px 0;
         }  
         
     }
-    
-    
 }
+    
