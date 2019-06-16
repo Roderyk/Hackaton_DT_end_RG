@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onload = function(){
 
     var BODY = this.document.querySelector('body'),
@@ -9,13 +8,7 @@ window.onload = function(){
         btn_pause = video_mod.querySelector('[data-pause-btn]'),
         btn_play = video_mod.querySelector('[data-play-btn]'),
         vid_progress = video_mod.querySelector('[data-progress]'),
-        is_playing = false
-     
-    ;
-
-  
-
-
+        is_playing = false;
     // video control
     btn_play.onclick = function(){
         video_el.play();
@@ -36,15 +29,7 @@ window.onload = function(){
         is_playing = false;
         video_mod.classList.remove('is-playing');
     };
-
-   
-   
-
-
-
-
 }
-=======
 window.onload = function() {
 
 var myForm = document.querySelector("form"),
@@ -58,4 +43,3 @@ myForm.onsubmit = function (e) {
   }
 }
 }
->>>>>>> feature/news

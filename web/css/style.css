@@ -47,7 +47,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-<<<<<<< HEAD
 /*
     Flaticon icon font: Flaticon
     Creation date: 06/06/2018 19:07
@@ -388,7 +387,7 @@ table {
   .footer-copyright {
     margin-bottom: 2rem;
     color: #767676; }
-=======
+
 .component_n {
   margin-top: 32px; }
 
@@ -582,7 +581,6 @@ table {
     .form .btn:hover {
       background-color: white;
       color: #7A217F; }
->>>>>>> feature/news
 
 html {
   font-family: "Poppins", sans-serif; }
