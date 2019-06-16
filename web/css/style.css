@@ -862,7 +862,8 @@ table {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-top: 20px; }
   .map iframe {
     width: 100vw; }
 
@@ -980,3 +981,10 @@ p {
   bottom: 0;
   background: -webkit-gradient(linear, left top, right top, from(#7A217F), to(transparent));
   background: linear-gradient(to right, #7A217F, transparent); }
+
+.wrapper-footer, .wrapper, .wrapper-header, .hero, .icon, .wrapper_n, .component, .stat-wrapper, .wrapper-tiles, .twitter, .wrapper-video {
+  margin-top: 30px; }
+
+.component_n {
+  padding-top: 20px;
+  margin-top: 30px; }

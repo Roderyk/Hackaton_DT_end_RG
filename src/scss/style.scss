@@ -84,3 +84,11 @@ p {
         background: linear-gradient(to right, $color4, transparent)
     }
 }
+
+.wrapper-footer, .wrapper, .wrapper-header, .hero, .icon, .wrapper_n, .component, .stat-wrapper, .wrapper-tiles, .twitter, .wrapper-video {
+    margin-top: 30px;
+}
+.component_n {
+    padding-top: 20px;
+    margin-top: 30px;
+}
