@@ -5,6 +5,9 @@
 
         //clearfix
         overflow: auto; // lub padding-bottom: 1px - nakładanie się marginów
+        font-weight: $light;
+        font-size:12px;
+        line-height: 200%;
         //or
         // &::after {
         //     content: "";

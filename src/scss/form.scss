@@ -134,5 +134,14 @@
             color: $color4;
         }
     }
-    
 }
+
+.map {
+    clear:both;
+    display: flex;
+    justify-content: center;
+    
+    iframe {
+        width: 100vw;
+    }
+} 
