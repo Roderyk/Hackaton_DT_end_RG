@@ -1,0 +1,68 @@
+.hero{
+        .wrapper-hero {
+            width: 100%;
+        }
+        margin: 0;
+        color: $color1;
+        background-color: $color2;
+        height: 450px;
+        background-image: url(../img/hero-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: 15% 30%;
+        position: relative;
+
+        @include tablet{
+            height: 600px;
+        }
+    
+        @include desktop{
+            height: 100vh;
+        }
+    &__content{
+        margin: 0 auto;
+        padding: 0 30px;
+        position: relative;
+        z-index: 5;
+        .title{
+            text-align: left;
+            @include tablet{
+                text-align: center;
+            }
+            padding-top: 150px;
+            @include tablet{
+                padding-top: 250px;
+            }
+           &__span{
+               margin-bottom: 30px;
+               display: block;
+               font-size: 20px;
+           } 
+        }
+    .email-form {
+        text-align:center;
+    }
+    .email {
+       
+        white-space: nowrap;
+        margin: 20px auto;
+        background: none;
+        border: 1px solid white;
+        border-right: none;
+        border-radius: 4px;
+        padding: 15px;
+        max-width: 200px;  
+        &::placeholder {
+            color: $color1;
+        } 
+
+     &__button {
+         background: white;
+         border:none;
+         position: relative;
+         left: -10px;
+         border-radius: 0 4px 4px 0;
+         padding: 16px;
+     }
+    }
+    }
+}

@@ -1,7 +1,80 @@
 // global
 @import 'reset.scss';
-@import '_news.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
 
 // addons
-
+@import 'flaticon.scss';
 // our modules
+@import 'header.scss';
+@import 'hero.scss';
+@import 'tiles.scss';
+@import 'c_video.scss';
+@import 'c_footer.scss';
+@import 'news.scss';
+@import 'form.scss';
+
+html {
+    font-family: $poppins;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    font-weight: $bold;
+}
+h2, .h2 {
+    font-size: 32px;
+    font-weight: $bold;
+}
+h3, .h3 {
+    font-size: 20px;
+    font-weight: $bold;
+}
+
+.wrapper-video{
+    max-width: $container-max-width;
+    margin: 0 auto;
+    position: relative;
+
+    padding-left: $space;
+    padding-right: $space; 
+ //   @include tablet{
+ //       padding-left: 2*$space;
+ //       padding-right: 2*$space;
+ //   }
+}
+.wrapper-footer{
+    max-width: $container-max-width;
+    margin: 0 auto;
+    position: relative;
+
+    padding-left: $space;
+    padding-right: $space; 
+ //   @include tablet{
+ //       padding-left: 2*$space;
+ //       padding-right: 2*$space;
+ //   }
+}
+
+p {
+    font-size: 16px;
+    font-weight: $bold;
+    color: $color5;;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.gradient {
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to right, $color4, transparent)
+    }
+}

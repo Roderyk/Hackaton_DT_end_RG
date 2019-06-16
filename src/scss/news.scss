@@ -1,0 +1,63 @@
+.component_n {
+    margin-top: 32px;
+}
+
+.wrapper_n {
+    @media screen and (min-width: $bp-desktop) {
+        margin-left: 128px;
+        margin-right: 128px;
+        margin-top: auto;
+        margin-down: auto;
+    }
+    .wrapper_header {
+        .p3 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+}
+.boxes {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    @include tablet { 
+        flex-direction: column;
+    }
+    @include desktop {
+        flex-direction: row;
+    } 
+    .cont {
+        padding: 20px;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        .cont_foot {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-top: 1px solid black;
+            .p4 {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+        .p1 {
+            text-align: center;
+            justify-content: center;
+            margin-top: 40px;
+            font-family: $poppins;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .p2 {
+            text-align: center;
+            justify-content: center;
+            margin-top: 40px;
+            font-family: $poppins;
+            font-size: 16px;
+        }
+    }
+}
