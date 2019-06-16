@@ -9,7 +9,9 @@
         @include tablet {
             width: 50%;
             float: left;
+            
         }
+
         border: 1px solid $color6;
         background-image: url(../img/tile.jpg);
         background-repeat: no-repeat;

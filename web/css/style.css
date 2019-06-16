@@ -400,6 +400,7 @@ table {
       font-size: 16px; }
 
 .form {
+  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
