@@ -44,3 +44,279 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.icon {
+  margin-top: 16px;
+  margin-bottom: 48px; }
+
+.icon-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  @media screen and (min-width: 1280px) {
+    .icon-wrapper {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+
+.icon-cont {
+  padding: 0 16px;
+  margin: 16px; }
+
+.icon-title {
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 768px) {
+    .icon-title {
+      margin-top: 8px;
+      margin-bottom: 28px; } }
+  .icon-title h4 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #767676; }
+
+.stat {
+  margin-bottom: 5%; }
+
+.stat-wrapper {
+  height: 200px;
+  position: relative;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .stat-wrapper {
+      height: 400px; } }
+  @media screen and (min-width: 1280px) {
+    .stat-wrapper {
+      height: 700px; } }
+  .stat-wrapper:after {
+    content: "";
+    background: url("../img/map_of-word.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .stat-wrapper h3 {
+    text-align: center;
+    position: absolute;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    top: 10%;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10vw;
+    margin-right: 10vw; }
+    @media screen and (min-width: 768px) {
+      .stat-wrapper h3 {
+        font-size: 24px;
+        top: 20%;
+        margin-left: 20vw;
+        margin-right: 20vw; } }
+    @media screen and (min-width: 1280px) {
+      .stat-wrapper h3 {
+        font-size: 32px;
+        top: 40%;
+        margin-left: 30vw;
+        margin-right: 30vw; } }
+  .stat-wrapper .paragraf {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    display: inline-block;
+    font-size: 8px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .stat-wrapper .paragraf {
+        top: 50%;
+        font-size: 12px;
+        margin-left: 30vw;
+        margin-right: 30vw; } }
+    @media screen and (min-width: 1280px) {
+      .stat-wrapper .paragraf {
+        top: 55%;
+        font-size: 16px;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        margin-top: 0px; } }
+
+.stat-flexBox__parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 768px) {
+    .stat-flexBox__parent {
+      margin-top: -100px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
+  @media screen and (min-width: 1280px) {
+    .stat-flexBox__parent {
+      margin-top: -200px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
+
+.stat-flexBox {
+  padding: 12px; }
+  .stat-flexBox span {
+    display: block;
+    float: left; }
+  .stat-flexBox p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif; }
+  .stat-flexBox .span1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 2px; }
+    @media screen and (min-width: 768px) {
+      .stat-flexBox .span1 {
+        font-size: 28px;
+        margin-right: 2px; } }
+    @media screen and (min-width: 1280px) {
+      .stat-flexBox .span1 {
+        font-size: 32px;
+        margin-right: 2px; } }
+  .stat-flexBox .span2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    z-index: 1; }
+    @media screen and (min-width: 768px) {
+      .stat-flexBox .span2 {
+        font-size: 18px; } }
+    @media screen and (min-width: 1280px) {
+      .stat-flexBox .span2 {
+        font-size: 20px; } }
+    .stat-flexBox .span2:before {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background: rgba(122, 33, 127, 0.2);
+      z-index: -1;
+      margin-bottom: -4px; }
+      @media screen and (min-width: 768px) {
+        .stat-flexBox .span2:before {
+          height: 12px; } }
+      @media screen and (min-width: 1280px) {
+        .stat-flexBox .span2:before {
+          height: 15px; } }
+
+.twitter {
+  width: 100%;
+  height: 256px;
+  background-size: cover;
+  background-image: url("../img/twitter.png");
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5; }
+  .twitter:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #7a217f), to(transparent));
+    background-image: linear-gradient(90deg, #7a217f 60%, transparent 100%);
+    z-index: 7; }
+
+.twitter-cont {
+  z-index: 10;
+  position: absolute;
+  margin-left: 10vw; }
+
+.twitter-tweet {
+  padding-top: 73px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 40vw; }
+  .twitter-tweet:before {
+    content: '';
+    background-size: 16px 16px;
+    z-index: 12;
+    background-image: url("/img/twitter-logo-white.png");
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin-left: -10px;
+    margin-top: -60px; }
+    @media screen and (min-width: 768px) {
+      .twitter-tweet:before {
+        margin-left: -50px;
+        margin-top: -30px; } }
+    @media screen and (min-width: 1280px) {
+      .twitter-tweet:before {
+        margin-left: -60px;
+        margin-top: -30px; } }
+
+.twitter-autor {
+  color: #FFFFFF;
+  padding-top: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500; }
+
+html {
+  font-family: "Poppins", sans-serif; }
+
+h1, .h1 {
+  font-size: 36px;
+  font-weight: 500; }
+
+h2, .h2 {
+  font-size: 32px;
+  font-weight: 500; }
+
+p {
+  font-size: 16px;
+  font-weight: 500; }
