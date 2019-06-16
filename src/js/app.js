@@ -8,13 +8,7 @@ window.onload = function(){
         btn_pause = video_mod.querySelector('[data-pause-btn]'),
         btn_play = video_mod.querySelector('[data-play-btn]'),
         vid_progress = video_mod.querySelector('[data-progress]'),
-        is_playing = false
-     
-    ;
-
-  
-
-
+        is_playing = false;
     // video control
     btn_play.onclick = function(){
         video_el.play();
@@ -35,11 +29,17 @@ window.onload = function(){
         is_playing = false;
         video_mod.classList.remove('is-playing');
     };
+}
+window.onload = function() {
 
-   
-   
+var myForm = document.querySelector("form"),
+    inputs_req = myForm.querySelectorAll("[required]");
 
-
-
-
+myForm.onsubmit = function (e) {
+  e.preventDefault();
+  myForm.classList.add("is-submitted");
+  for (var i = 0; i < inputs_req.length; i++) {
+    inputs_req[i].checkValidity();
+  }
+}
 }
