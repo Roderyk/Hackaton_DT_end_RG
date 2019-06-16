@@ -11,7 +11,8 @@ $color9: #707070;
 $color10: #00A3E2;
 $color10: #DADADA;
 
-
+$base-unit: 1rem;
+$space: $base-unit * 2;
 //font-weight:
 $light: 300;
 $normal: 400;
@@ -26,7 +27,7 @@ $roboto: 'Roboto', sans-serif;
 $bp-tablet: 768px;
 $bp-desktop: 1280px;
 
-
+$container-max-width: 74 * $base-unit;
 
 
 
