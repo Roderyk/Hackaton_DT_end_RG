@@ -1,0 +1,138 @@
+.form {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    label {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    fieldset {
+        margin-bottom: 16px;
+        
+    }
+    .validity {
+        display: none;
+        color:red;
+        font-size: 12px;
+    }
+    form {
+        &.is-submitted {
+            input:invalid {
+                & + .validity {
+                    display: block;
+                }
+            }
+        }
+        .input {
+            display: inline-block;
+            width: 400px;
+        }
+        .p_form {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-family: $poppins;
+            color: $color6;
+        }
+        .mess {
+            font-family: $poppins;
+            color: $color6;
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+
+    input[type=text] {
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid $color6;
+      }
+    
+      input[type=email] {
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid $color6;
+      }
+    
+    .get {
+        font-size: 32px;
+        color: #0D70B7;
+        font-family: $poppins;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .if {
+        color: $color9;
+        font-family: $poppins;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 544px;
+        height: 161px;
+        background-color: #F8F8F8;
+        p {
+            text-align: center;
+            color: $color9;
+            font-weight: bold;
+            font-family: $poppins;
+        }
+    }
+    
+    .priv_polic {
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .small {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .small_v {
+        margin-top: 10px;
+        margin-left: 2px;
+        font-size: 10px;
+        color: $color4;
+        font-weight: bold;
+    }
+    
+    .d_but {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn {
+        text-align: center;
+        width: 160px;
+        height: 48px;
+        display:inline-block;
+        padding: 16px;
+        border: 1px solid black;
+        font-size: 16px;
+        background-color: $color4;
+        color: white;
+        transition: all 1s linear;
+        border-radius: 10px;
+        &:hover {
+            background-color: white;
+            color: $color4;
+        }
+    }
+    
+}
