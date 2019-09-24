@@ -1,6 +1,28 @@
 // global
 @import 'reset.scss';
+@import 'variables.scss';
+@import '_mixins.scss';
 
 // addons
 
 // our modules
+@import '_news.scss';
+@import '_form.scss';
+
+html {
+    font-family: $poppins;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    font-weight: $bold;
+}
+h2, .h2 {
+    font-size: 32px;
+    font-weight: $bold;
+}
+
+p {
+    font-size: 16px;
+    font-weight: $bold;
+}
